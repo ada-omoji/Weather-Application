@@ -38,3 +38,14 @@ input[type=submit] {
     font-size: 50px;
     font-family: 'Diphylleia', serif;
 }
+
+.weatherContainer  {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding-right: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    border-radius: 5px;
+} 
