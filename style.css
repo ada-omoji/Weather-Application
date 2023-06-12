@@ -82,3 +82,24 @@ input[type=submit] {
 .icon, .currentCity {
     text-align: center;
 }
+
+/* This is a phone screen */
+@media only screen and (max-width: 480px) {
+    .weatherContainer {
+        flex-direction: column;
+}
+}
+
+/* This is a tablet screen */
+@media only screen and (min-width: 480px) and (max-width:1023px) {
+    .weatherContainer {
+        flex-direction: row;
+}
+}
+
+/* This is desktop screen */
+@media only screen and (min-width: 1024px) {
+    .weatherContainer {
+        flex-direction: row;
+}
+}
