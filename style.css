@@ -74,3 +74,11 @@ input[type=submit] {
     border-radius: 25px; 
     background: linear-gradient(#E5D1FA, #91D8E4);
 } 
+
+.weather p.date {
+    text-align: center;
+  }
+  
+.icon, .currentCity {
+    text-align: center;
+}
