@@ -13,7 +13,16 @@ submit.addEventListener('click', function(e) {
     .then (data => {
         (console.log(data))
 
+    for (let i = 0; i < data.list.length; i+= 8) { //iterate through the list array and retrieve data every 8th index (5 day forecast)     
+        let date = new Date(data.list[i].dt * 1000).toLocaleString("en-BE", 
+            {
+            weekday: "long",
+            month: "short",
+            day: "2-digit"
+             });
 
+             
+            }
 
 }) // end of weather fetch
 }) //end of event listener
