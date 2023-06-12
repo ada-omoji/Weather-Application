@@ -46,5 +46,9 @@ submit.addEventListener('click', function(e) {
                         <p>Humidity: ${humidity}</p>`
     document.querySelector('.weatherContainer').appendChild(results)
 
+    let cityValue = data.city.name + ', ' + data.city.country
+    city.innerHTML = cityValue;
+
+
 }) // end of weather fetch
 }) //end of event listener
