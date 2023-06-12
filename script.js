@@ -33,6 +33,10 @@ submit.addEventListener('click', function(e) {
              let humidity = data.list[i].main.humidity + ' %';
              let description = data.list[i].weather[0].description;
             }
+
+            let icon = data.list[i].weather[0].icon;
+            let iconUrl = `https://openweathermap.org/img/wn/${icon}@2x.png`;
+            
             let results = document.createElement('div')
                     results.classList.add('weather')
                     results.innerHTML = 
