@@ -54,9 +54,9 @@ submit.addEventListener('click', function(e) {
     city.innerHTML = cityValue;
 
 }
-        }) //End of fetch 
-});// end of weather fetch
-//end of event listener
+        }) 
+});
+
 
 const submitButton = document.querySelector(".submitButton")
 submitButton.addEventListener("click", background)
