@@ -36,7 +36,7 @@ submit.addEventListener('click', function(e) {
 
             let icon = data.list[i].weather[0].icon;
             let iconUrl = `https://openweathermap.org/img/wn/${icon}@2x.png`;
-            
+
             let results = document.createElement('div')
                     results.classList.add('weather')
                     results.innerHTML = 
@@ -53,6 +53,18 @@ submit.addEventListener('click', function(e) {
     let cityValue = data.city.name + ', ' + data.city.country
     city.innerHTML = cityValue;
 
+const submitButton = document.querySelector(".submitButton")
+submitButton.addEventListener("click", background)
+function background() {
+    const search = document.querySelector(".cityInput").value;
+    fetch(`https://api.unsplash.com/search/photos?query=${search}&client_id=DUisWwncBCV4C03_pAu3HFVmWEiHCc6W77HLV7-sEls`)
+    .then(response => response.json())
+    .then(data => {
+          const image = data.results[0];
+          backgroundImage.style.background = `url(${image.urls.regular})`;
+          console.log('image')
 
+        }); //End of fetch 
+     }; //End of function
 }) // end of weather fetch
 }) //end of event listener
