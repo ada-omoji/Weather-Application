@@ -26,7 +26,12 @@ submit.addEventListener('click', function(e) {
             day: "2-digit"
              });
 
-
+             let temperature = data.list[i].main.temp.toFixed(0) +'°C';
+             let feelsLike = data.list[i].main.feels_like.toFixed(1) +'°C';
+             let min = data.list[i].main.temp_min.toFixed(0) + '°C';
+             let max = data.list[i].main.temp_max.toFixed(0)  + '°C';
+             let humidity = data.list[i].main.humidity + ' %';
+             let description = data.list[i].weather[0].description;
             }
 
 }) // end of weather fetch
