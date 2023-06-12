@@ -33,6 +33,18 @@ submit.addEventListener('click', function(e) {
              let humidity = data.list[i].main.humidity + ' %';
              let description = data.list[i].weather[0].description;
             }
+            let results = document.createElement('div')
+                    results.classList.add('weather')
+                    results.innerHTML = 
+                        `<p class = "date">${date}<p>
+                        <img src=${iconUrl}>
+                        <p>${description}</p>
+                        <div class = "minMax">
+                            <p>High: ${max}</p>
+                            <p>Low: ${min}</p>
+                        </div>
+                        <p>Humidity: ${humidity}</p>`
+    document.querySelector('.weatherContainer').appendChild(results)
 
 }) // end of weather fetch
 }) //end of event listener
