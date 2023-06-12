@@ -54,3 +54,23 @@ input[type=submit] {
     display: flex;
     justify-content: space-between;
   }
+
+  :root {
+	--gradient: linear-gradient( 135deg, #72EDF2 10%, #5151E5 100%); 
+}
+
+.weather {
+    text-align: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-left: 40px;
+    border: 50cm;
+    /* text-transform: uppercase;  */
+    font-family: 'Montserrat', sans-serif;
+    background: transparent;
+    border-style: solid;
+    border-width: 4px 4px 4px 4px;
+    border-color: #E893CF;
+    border-radius: 25px; 
+    background: linear-gradient(#E5D1FA, #91D8E4);
+} 
