@@ -21,6 +21,11 @@ body {
     overflow: hidden;
 }
 
+h1, form, :placeholder-shown{
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+}
+
 .cityInput {
     border-radius: 25px;
     font-family: 'Quicksand', sans-serif;
@@ -39,13 +44,15 @@ input[type=submit] {
     font-family: 'Diphylleia', serif;
 }
 
-.weatherContainer  {
+ .weatherContainer  {
     display: flex;
     flex-direction: row;
     width: 100%;
     padding-right: 10px;
     justify-content: center;
     align-items: center;
+    /* justify-content: space-between; */
+    /* padding-left: 50px;  */
     margin-bottom: 10px;
     border-radius: 5px;
 } 
@@ -55,11 +62,11 @@ input[type=submit] {
     justify-content: space-between;
   }
 
-  :root {
+:root {
 	--gradient: linear-gradient( 135deg, #72EDF2 10%, #5151E5 100%); 
 }
 
-.weather {
+ .weather {
     text-align: center;
     padding-left: 50px;
     padding-right: 50px;
