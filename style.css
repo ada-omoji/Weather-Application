@@ -20,3 +20,21 @@ body {
     background-size: cover;
     overflow: hidden;
 }
+
+.cityInput {
+    border-radius: 25px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+input[type=submit] {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    border-radius: 25px; 
+    background-color: #E5D1FA !important; 
+}
+
+.currentCity {
+    padding-top: 10pt;
+    font-size: 50px;
+    font-family: 'Diphylleia', serif;
+}
