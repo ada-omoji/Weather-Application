@@ -3,7 +3,7 @@
 ## What is it?
 An interactive web app that shows the 5-day forecast of any city in the world. The weather data is generated using the OpenWeatherMap API 
 
-## 🔍Learning objectives
+## 🔍 Learning objectives
 - A typical AJAX flow: sending asynchronous requests to a remote server and processing the results
 - DOM manipulation: changing the DOM based on the results of the AJAX requests
 - Aggregating and parsing data fetched from an API
@@ -16,4 +16,4 @@ An interactive web app that shows the 5-day forecast of any city in the world. T
 ## Languages used
 [![Languages](https://skillicons.dev/icons?i=html,js,css,&theme=light)](https://skillicons.dev)
 
-<!-- **Have a look at the finished project [right here](link)** -->
+Have a look at the finished project [right here](https://ada-weather-app.netlify.app/)
