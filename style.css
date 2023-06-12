@@ -49,3 +49,8 @@ input[type=submit] {
     margin-bottom: 10px;
     border-radius: 5px;
 } 
+
+.minMax {
+    display: flex;
+    justify-content: space-between;
+  }
